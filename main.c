@@ -6,6 +6,10 @@
  */
 
 //load headers
+
+#if defined(_WIN32) || defined (_WIN64) 
+    #include <windows.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

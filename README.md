@@ -1,6 +1,16 @@
 # Snake
-# Build
-1.Install QT and qmake
-2.If Windows install MinGW.In Linux build-essential if Debian or  @development-tools in Fedora.
-3.Install glut.
-4.Run command in terminal "qmake-qt5" and "make"
+##Build
+###Linux
+Install glut.<br>
+Install gcc.<br>
+Run command - gcc main.c -o main -lGLU -lGL  -lglut <br>
+Run compiled program - ./main --help<br>
+###Windows
+Install MinGW<br>
+Install glut and read [this] (https://w3.cs.jmu.edu/bernstdh/Web/common/help/cpp_mingw-glut-setup.php)<br>
+Run command -gcc  main.c -o main.exe glut32.lib -lopengl32 -lglu32<br>
+Open cmd and go to place compiled program - main.exe --help<br>
+##Controls
+F1 - fullscreen on<br>
+F2 - fullscreen off<br>
+F12 - exit from game<br>
